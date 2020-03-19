@@ -124,15 +124,6 @@
         padding: 24;
         animation:leftIn .4s ease;
     }
-    @keyframes leftIn{
-        from{
-            transform:translate(-10,0)
-        }
-        to{
-            transform:translate(0,0)
-        }
-    }
-
     .white{
         color:white;
     }
