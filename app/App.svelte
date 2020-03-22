@@ -33,7 +33,7 @@
 </script>
 
 <page>
-    <actionbar style="background-color:#333" class="white" title="Norske tech nyheter" />
+    <actionbar style="background-color:#333" class="white" title="Tech news" />
     <scrollView>
         <stackLayout class="articles">
         {#each articles as article}
