@@ -37,10 +37,12 @@
     <scrollView>
         <stackLayout class="articles">
         {#each articles as article}
+        {#if article.urlToImage}
             <flexboxLayout on:tap={() => showNews(article)} flexDirection="column" height="350" class="article" >
                 <image src="{article.urlToImage}" width="300" height="200" class="img-rounded" stretch="aspectFill" alt="cover" />
                 <label textWrap="true" class="h2 white" text="{article.title}"/>
             </flexboxLayout>
+        {/if}
         {:else}
             <activityIndicator busy="{true}" />
         {/each}
